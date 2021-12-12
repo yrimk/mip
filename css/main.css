@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+body{font-size: 1.4rem;}
+#wrap{
+  min-width: 320px;
+}
+
+/* =====================content===================== */
+#content{
+  background-color: #000;
+  padding-top: 70px;
+  box-sizing: content-box;
+  height: 100%;
+}
+section{
+  position: relative;
+  margin-bottom: 40px;
+}
+section h2{
+  font-size: 2rem;
+  color: #fff;
+  padding: 10px 10px;
+  margin: 10px 0 15px;
+}
+section .swiper-button-next, .swiper-button-prev{
+  display: none;
+}
+section h2::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 2px;
+  height: 18px;
+  background-color: #e72562;
+  border-radius: 5px;
+}
+section .s_wrap{
+  width: 100%;
+  margin: 0 20px;
+}
+section.box1 .swiper-slide{
+  width: 35%;
+  flex-shrink: 0;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+section.box1 .img_box{
+  width: 100%;
+  overflow: hidden;
+}
+.img_box img{
+  width: 100%;
+  transform: scale(1.02);
+}
+.st1{
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../img/netp.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px auto;
+  z-index: 50;
+}
+section.box1 h3{
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+  flex-basis: 100%;
+}
+section.box1 .txt_box{
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section.box1 .txt1{
+  display: inline-block;
+  color: #f88b08;
+  font-size: 1.4rem;
+  margin-right: 20px;
+}
+section.box1 .txt1::before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/star_y.svg);
+  margin-right: 2px;
+  margin-left: 3px;
+}
+section.box1 .txt2{
+  display: inline-block;
+  color: #e72562;
+  font-size: 1.4rem;
+}
+section.box1 .txt2::before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/star_p.svg);
+  margin-right: 2px;
+  margin-left: 5px;
+}
+section.box2 .swiper-slide{
+  width: 50%;
+  flex-shrink: 0;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 30px;
+  padding-bottom: 10px;
+}
+section.box2 .img_box{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.box2 .img_box > div{
+  width: 50%;
+  height: 50%;
+}
+
+section.box2 .txt_box{
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 5px 0;
+}
+
+section.cont3 .swiper-slide:nth-child(2n-1) .txt_box h3::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background: url(../img/can.svg) no-repeat center 7px;
+  margin-right: 5px;
+}
+section.cont3 .wiper-slide:nth-child(2n) .txt_box h3::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background: url(../img/oscar.svg) no-repeat center;
+  margin-right: 5px;
+}
+section.box2 li .txt_box h3{
+  margin-bottom: 5px;
+}
+
+/* =====================footer===================== */
+footer{
+  height: 220px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+footer ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 20px 0;
+}
+footer li a{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+footer li a.fb{
+  background: url(../img/fb.svg) no-repeat center / 20px auto;
+}
+footer li a.insta{
+  background: url(../img/insta.svg) no-repeat center / 20px auto;
+}
+footer li a.twit{
+  background: url(../img/twiter.svg) no-repeat center / 20px auto;
+}
+footer li a.yout{
+  background: url(../img/yout.svg) no-repeat center / 20px auto;
+}
+footer li a:hover{
+  background-color: #000;
+}
+footer .txt1{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+footer .txt2{
+  font-size: 1.3rem;
+}
+
+@media (min-width:1024px){
+
+/* =====================content===================== */
+  section
+  section h2{
+    font-size: 2.8rem;
+  }
+  section h2::before{
+    top: 15px;
+    height: 22px;
+  }
+  section.box1 h3{
+    font-size: 2.0rem;
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+  }
+  section.box1 .txt_box{
+    padding: 5px 30px;
+    font-size: 1.8rem;
+  }
+  section.box1 .txt1{
+    display: inline-block;
+    color: #f88b08;
+    font-size: 2rem;
+    margin-right: 40px;
+  }
+  section.box1 .txt1::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/star_y.svg);
+    margin-right: 2px;
+    margin-left: 3px;
+  }
+  section.box1 .txt2{
+    display: inline-block;
+    color: #e72562;
+    font-size: 1.8rem;
+  }
+  section.box1 .txt2::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/star_p.svg);
+    margin-right: 2px;
+    margin-left: 5px;
+  }
+  .st1{
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-size: 18px auto;
+  }
+
+  section.box2 .txt_box{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+  section.cont3 .swiper-slide:nth-child(2n-1) .txt_box h3::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background: url(../img/can.svg) no-repeat center 10px;
+    margin-right: 5px;
+  }
+  section.cont3 .swiper-slide:nth-child(2n) .txt_box h3::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background: url(../img/oscar.svg) no-repeat center;
+    margin-right: 5px;
+  }
+  section.box2 li .txt_box h3{
+    margin-bottom: 5px;
+  }
+  .swiper-button-next{
+    display: block;
+  }
+  section .swiper-button-next, .swiper-button-prev{
+    display: block;
+    color: #e72562;
+  }
+  section .swiper-button-next{
+    right: 0;
+  }
+  section .swiper-button-prev{
+    left: 0;
+  }
+
+}
+@media (min-width:1280px){
+  /* =====================content===================== */
+
+}
