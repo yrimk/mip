@@ -79,6 +79,7 @@ header button{
 #bottom button{
   width: 60px;
   height: 50px;
+  cursor: pointer;
 }
 #bottom button.home{
   background: url(../img/home.svg) no-repeat center / auto 40px;
