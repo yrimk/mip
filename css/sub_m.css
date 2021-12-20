@@ -110,9 +110,6 @@ header{
   width: 30px;
   height: 30px;
 }
-.top_box2 .star span{
-  cursor: pointer;
-}
 .top_box2 .star span.s1, .top_box2 .star span.s2, .top_box2 .star span.s3{
   background: url(../img/star_p.svg) no-repeat center;
 }
@@ -349,8 +346,8 @@ section.cont3{
 .cont6 .mySwiper1{
   width: 100%;
   display: flex;
-  /* overflow: auto;  */
-  /* scroll-snap-type: none; */
+  overflow: auto; 
+  scroll-snap-type: x mandatory;
   justify-content: flex-start;
 }
 .cont6 .swiper-slide{
