@@ -2,7 +2,7 @@
 
 body{font-size: 1.4rem;}
 #wrap{
-  min-width: 320px;
+  min-width: 350px;
 }
 
 header{
@@ -346,9 +346,8 @@ section.cont3{
 .cont6 .mySwiper1{
   width: 100%;
   display: flex;
-  overflow: auto; 
-  scroll-snap-type: x mandatory;
-  justify-content: flex-start;
+  overflow: hidden; 
+
 }
 .cont6 .swiper-slide{
   width: 30%;

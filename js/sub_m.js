@@ -7,11 +7,11 @@ $(document).ready(function(){
   });
   $(".cont4 a").fancybox();
 
-  if ($(window).width() < 400) {
+  function swiper1(n){
     var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 2,
+      slidesPerView: n,
       spaceBetween: 30,
-      slidesPerGroup: 2,
+      slidesPerGroup: n,
       loop: true,
       pagination: {
         el: ".swiper-pagination",
@@ -22,9 +22,12 @@ $(document).ready(function(){
         prevEl: ".swiper-button-prev",
       }
     });
-    var swiper2 = new Swiper(".mySwiper2", {
-      slidesPerView: 1,
-      spaceBetween: 20,
+  }
+
+  function swiper2(n){
+    var swiper1 = new Swiper(".mySwiper2", {
+      slidesPerView: n,
+      spaceBetween: 30,
       loop: true,
       pagination: {
         el: ".swiper-pagination",
@@ -35,209 +38,42 @@ $(document).ready(function(){
         prevEl: ".swiper-button-prev",
       }
     });
+  }
+
+  if ($(window).width() < 400) {
+    swiper1(2);
+    swiper2(1);
   } 
   else if($(window).width() >= 400 && $(window).width() < 700){
-    var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
+    swiper1(3);
+    swiper2(2);
   }
   else if(window.innerWidth >= 700 && window.innerWidth < 1280){
-    var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
+    swiper1(4);
+    swiper2(3);
   }
   else if(window.innerWidth >= 1280){
-    var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-    });
+    swiper1(2);
+    swiper2(1);
   }
  
 
   $(window).resize(function (){ 
     if (window.innerWidth < 400) {
-      var swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesPerGroup: 2,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
+      swiper1(2);
+      swiper2(1);
     } 
     else if(window.innerWidth >= 400 && window.innerWidth < 700){
-      var swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
+      swiper1(3);
+      swiper2(2);
     }
     else if(window.innerWidth >= 700 && window.innerWidth < 1280){
-      var swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
+      swiper1(4);
+      swiper2(3);
     }
     else if(window.innerWidth >= 1280){
-      var swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesPerGroup: 2,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
-      });
+      swiper1(2);
+      swiper2(1);
     }
   });
 
